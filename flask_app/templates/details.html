@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <title>Calorie Counter</title>     
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1,
+            shrink-to-fit=no">
+
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+            crossorigin="anonymous">
+
+    </head>
+    <style>
+        body {
+            background-image: url("/static/images/element5-digital-acrBf9BlfvE-unsplash.jpg");
+        }
+    </style>
+    <body class="d-flex flex-column min-vh-100">
+        <header>
+            <nav class="navbar navbar-light bg-dark">
+                <div class="mb-0 mx-4 display-3 text-primary">Calorie Counter</div>
+                <div>
+                    <a href="/home" class="btn btn-outline-primary">Home</a>
+                    <a href="/logout" class="btn btn-outline-primary">Logout</a>
+                </div>
+            </nav>
+        </header>
+        <main class="mx-4">
+            <h2 class="text-center">{{ entry.name }}</h2>
+            <div class="container border border-dark col-4 text-bg-light">
+                
+                <p>Name: {{entry.name}}</p>
+                <p>Qty: {{ entry.qty }}</p>
+                <p>Calories: {{ entry.calories }}</p>
+            </div>
+
+        </main>
+        <footer class="mt-auto">
+            <p class="text-center">
+                Copyright &copy; 2023 | Made by Shantel Williams
+            </p>
+        </footer>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+            crossorigin="anonymous">
+        </script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+            integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+            crossorigin="anonymous">
+        </script>
+    </body>
+
+</html>
